@@ -1,24 +1,31 @@
 // 清除浮动
 .g-c {
-  *zoom: 1;
-  &:before,
-  &:after {
-    content: " ";
-    display: inline-block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-  }
+    *zoom: 1;
+    &:before,
+    &:after {
+        content: ' ';
+        display: inline-block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
 }
 // 隐藏
-.g-dn{
+.g-dn {
     display: none;
 }
-.g-hidden{
+.g-hidden {
     visibility: hidden;
 }
-.g-flee{
+.g-flee {
     position: absolute;
     left: -3000px;
     top: -3000px;
+}
+
+// 垂直居中
+.g-v-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
